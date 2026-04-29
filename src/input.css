@@ -28,19 +28,19 @@
 }
 
 @layer utilities {
-  .hamburger-line {
-    @apply w-6 h-0.5 my-1 block bg-white transition-all duration-300 ease-in-out origin-center;
-  }
+ .hamburger-line {
+  @apply w-6 h-0.5 my-1 block bg-white rounded transition-all duration-300 ease-in-out origin-center;
+}
 
-  .hamburger-active > span:nth-child(1) {
-    @apply rotate-45 translate-y-[10px];
-  }
+.hamburger-active > span:nth-child(1) {
+  @apply rotate-45 translate-y-[6px];
+}
 
-  .hamburger-active > span:nth-child(2) {
-    @apply opacity-0 scale-0;
-  }
+.hamburger-active > span:nth-child(2) {
+  @apply opacity-0 scale-0;
+}
 
-  .hamburger-active > span:nth-child(3) {
-    @apply -rotate-45 -translate-y-[10px];
-  }
+.hamburger-active > span:nth-child(3) {
+  @apply -rotate-45 -translate-y-[6px];
+}
 }
